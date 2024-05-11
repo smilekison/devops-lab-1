@@ -16,7 +16,7 @@ resource "aws_instance" "jenkins_instance" {
     user        = "ubuntu"
     private_key = file("lab-1.pem")
     host        = self.public_ip
-  }
+  } 
 
   provisioner "remote-exec" {
     inline = [
